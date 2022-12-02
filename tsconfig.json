@@ -2,16 +2,23 @@
   "compilerOptions": {
     "outDir": "dist",
     "target": "es2018",
-    "module": "esnext",
-    "lib": ["esnext"],
+    "module": "CommonJS",
+    "lib": [
+      "esnext"
+    ],
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true
   },
-  "include": ["src"],                                    /* which files to compile */
-  "exclude": ["node_modules"],                           /* which files to skip */
+  "include": [
+    "src"
+  ] /* which files to compile */,
+  "exclude": [
+    "node_modules"
+  ] /* which files to skip */
 }
